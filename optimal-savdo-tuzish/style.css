@@ -1,0 +1,715 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ffcb05;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.logo {
+  font-weight: bold;
+  color: #d60000;
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  background: url("87575adc-c8cb-4bae-8ec8-3aa779dd77c0.png") no-repeat center
+    center/cover;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kurs-nimalardan-iborat2 {
+  display: flex;
+  gap: 50px;
+  margin-top: 100px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.kurs-nimalardan-iborat2-text-main-text {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.kurs-nimalardan-iborat-text-ul {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.highlight-text {
+  background-color: #ffcb05;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-yellow {
+  background-color: #ffcb05;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn-white {
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 10%;
+  background-color: #fff;
+  text-align: center;
+  gap: 40px;
+}
+
+.feature-box {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 0 20px;
+}
+
+.feature-box:last-child {
+  border-right: none;
+}
+
+.feature-box img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  background-color: #ffc800;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+}
+
+.course-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background-color: #f59e2d;
+  background-image: url("pattern-bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.course-result .content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.course-result h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.course-result ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.course-result ul li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: #000;
+  padding: 15px 20px;
+  border-radius: 4px;
+  max-width: 500px;
+}
+
+.course-result .btn-white {
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.course-result .image {
+  flex: 1;
+  text-align: center;
+}
+
+.course-result .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.learn-section {
+  text-align: center;
+  padding: 80px 10% 60px;
+  background-color: white;
+}
+
+.learn-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.learn-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.learn-item {
+  flex: 1 1 200px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.learn-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.learn-item p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+}
+
+.start-btn {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: darkred;
+}
+
+.oquv-dasturi {
+  display: flex;
+  gap: 150px;
+  padding: 100px;
+  background-color: rgb(202, 199, 199);
+}
+
+.left-h1 {
+  font-size: 50px;
+}
+
+.oquv-dasturi-cart {
+  padding: 50px;
+  border-radius: 50px;
+  background-color: white;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.oquv-dasturi-cart-h1 {
+  font-weight: 700;
+  font-size: 39.5px;
+}
+
+.oquv-dasturi-cart-p {
+  font-weight: 500;
+  font-size: 20px;
+  color: red;
+  display: flex;
+  gap: 10px;
+}
+
+.oquv-dasturi-cart-p-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.oquv-dasturi-cart-p-span {
+  display: flex;
+  text-align: center;
+}
+
+.oquv-dasturi-cart-ol {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 15px;
+}
+.oquv-dasturi-cart-li {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.oquv-dasturi-cart-btn {
+  border: none;
+  color: #abc900;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.right {
+  margin-top: 300px;
+}
+
+.oquv-dasturi-right-btn {
+  padding: 20px 50px;
+  border-radius: 20px 50px;
+  border: none;
+  background-color: #d60000;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.kurs-nimalardan-iborat {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.kurs-nimalardan-iborat-main-text {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -75px;
+}
+
+.about-course {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  gap: 75px;
+}
+
+.about-course-cart {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-course-img {
+  width: auto;
+  height: 100px;
+  margin-top: -25px;
+}
+
+.about-course-h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.kurs-nimalardan-iborat-text {
+  text-align: center;
+  margin-top: 75px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.kurs-nimalardan-iborat-text-h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.kurs-nimalardan-iborat-text-h1 {
+  color: #fcba03;
+  font-size: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kurs-nimardan-iborat-btn {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.author-of-the-course {
+  display: flex;
+  margin-top: 150px;
+  gap: 100px;
+  padding: 50px 150px;
+}
+
+.author-of-the-course-img-cart-img {
+  width: auto;
+  height: 400px;
+}
+
+.author-of-the-course-text-cart {
+  margin-top: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.author-of-the-course-text-cart-grey {
+  color: grey;
+}
+
+.author-of-the-course-text-cart-ul {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bugun-kechagidan-kuchliroq {
+  display: flex;
+  gap: 300px;
+  margin-top: 50px;
+}
+
+.bugun-kechagidan-kuchliroq-h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(70, 61, 85);
+  color: white;
+  padding: 100px 178px;
+  text-align: center;
+}
+
+.data-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.data-box {
+  display: flex;
+  gap: 70px;
+  border: 5px solid white;
+  padding: 80px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-box-cart-h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.data-box-cart-p {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.kafolat {
+  display: flex;
+  padding: 40px 180px;
+  margin-top: 100px;
+  background-color: #f59e2d;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.kafolat-border {
+  display: flex;
+  align-items: center;
+  border: 10px solid white;
+  padding: 50px 30px;
+  gap: 10px;
+}
+
+.kafolat-text-section {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.kafolat-text-section-main-text {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.kafolat-text-section-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.kafolat-btn {
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+  color: #f59e2d;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+  color: #444;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+
+.faq h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.accordion {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: grey;
+}
+
+.accordion-item {
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.accordion-header:hover {
+  background: #fafafa;
+}
+
+.accordion-header .icon {
+  font-size: 28px;
+  transition: transform 0.3s;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background: #fff;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 400px;
+  padding: 20px;
+}
+
+.accordion-item .icon::before {
+  content: "+";
+}
+
+.accordion-item.active .icon::before {
+  content: "×";
+}
+
+.dasturlash {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.dasturlash-text-main {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.dasturlash-text-main-h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.dasturlash-buttons-btn {
+  border: none;
+  border-radius: 50px;
+  background-color: #fe1111;
+  color: white;
+  padding: 20px 150px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.youtube {
+  display: flex;
+  gap: 50px;
+  padding: 50px 120px;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.youtube-section-img {
+  margin-top: 50px;
+}
+
+.youtube-main-text-h1 {
+  font-size: 600;
+  color: #fe1111;
+}
+
+.youtube-main-text {
+  text-align: center;
+}
+
+.youtube-main-text h2 {
+  margin-top: -10px;
+}
+
+.enter-youtube-channel {
+  border: none;
+  border-radius: 50px;
+  padding: 20px 100px;
+  background-color: #fe1111;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  padding-inline-start: 100px 150px;
+}
+
+.footer-logo {
+  width: auto;
+  height: 100px;
+}
+
+.footer-links {
+  gap: 20px;
+  display: flex;
+}
+
+.footer-links-logos {
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
